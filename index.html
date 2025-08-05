@@ -93,6 +93,23 @@
         box-shadow: none;
       }
     }
+
+    #animated-brand-name {
+      animation: fadeInBrand 1.5s ease;
+      letter-spacing: 0.5px;
+    }
+
+    @keyframes fadeInBrand {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -107,6 +124,10 @@
           <div class="ml-4">
             <h1 class="text-2xl font-bold text-gray-900">WELLSPRING UNIVERSITY</h1>
             <h2 class="text-lg text-gray-600">GPA CALCULATOR</h2>
+            <span id="animated-brand-name" class="block italic text-primary text-sm mt-1 font-medium"
+              style="font-family: 'inter', cursive;">
+              Powered by The Tech Innovators.
+            </span>
           </div>
         </div>
         <nav class="hidden md:flex space-x-6">
